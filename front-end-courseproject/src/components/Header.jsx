@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../App.css"; // De CSS zit hier
+import "./Header.css";
 
-const Header = () => {
+function Header() {
   return (
     <header>
       <div className="logo">
