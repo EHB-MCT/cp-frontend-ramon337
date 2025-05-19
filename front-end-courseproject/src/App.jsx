@@ -4,20 +4,53 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import MakingOf from "./pages/MakingOf";
+import FairyTale from "./pages/fairytale";
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <div className="wrapper">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/making-of" element={<MakingOf />} />
-        </Routes>
-      </div>
-      <Footer />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <div className="wrapper">
+                <Header />
+                <Home />
+              </div>
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/projects"
+          element={
+            <>
+              <div className="wrapper">
+                <Header />
+                <Projects />
+              </div>
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/making-of"
+          element={
+            <>
+              <div className="wrapper">
+                <Header />
+                <MakingOf />
+              </div>
+              <Footer />
+            </>
+          }
+        />
+      </Routes>
+      <Routes>
+        <Route path="/fairytale" element={<FairyTale />} />
+      </Routes>
     </div>
   );
 }

@@ -3,9 +3,19 @@ footer {
     display: flex;
     justify-content: center;
     padding-top: 20px;
+    padding-bottom: 30px;
 }
 footer h1 {
     margin: 0;
+}
+footer ul {
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+footer ul li a {
+    text-decoration: none;
 }
 .footer-logo img {
     width: 100px;
