@@ -1,101 +1,101 @@
 [
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "ROODKAPJE",
     "student": "student 1"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../tumbnail.png",
     "title": "DE 3 BIGGETJES",
     "student": "Student 2"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "DE WOLF EN DE 7 GEITJES",
     "student": "Student 3"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "SNEEUWWITJE",
     "student": "Student 4"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "HANS EN GRIETJE",
     "student": "Student 5"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "HANS EN GRIETJE",
     "student": "Student 6"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "HANS EN GRIETJE",
     "student": "Student 7"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "HANS EN GRIETJE",
     "student": "Student 8"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "HANS EN GRIETJE",
     "student": "Student 9"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "HANS EN GRIETJE",
     "student": "Student 10"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "HANS EN GRIETJE",
     "student": "Student 11"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "HANS EN GRIETJE",
     "student": "Student 12"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "HANS EN GRIETJE",
     "student": "Student 13"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "HANS EN GRIETJE",
     "student": "Student 14"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "HANS EN GRIETJE",
     "student": "Student 15"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "HANS EN GRIETJE",
     "student": "Student 16"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "HANS EN GRIETJE",
     "student": "Student 17"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "HANS EN GRIETJE",
     "student": "Student 18"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "HANS EN GRIETJE",
     "student": "Student 19"
   },
   {
-    "image": "src/assets/sprookje.png",
+    "image": "../sprookje.png",
     "title": "HANS EN GRIETJE",
     "student": "Student 20"
   }

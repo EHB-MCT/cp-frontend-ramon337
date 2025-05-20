@@ -21,7 +21,7 @@ const ScrollImage = ({ imgPath, speed, className }) => {
       className={`scroll-image ${className}`}
     >
       <img
-        src={`${imgPath}`}
+        src={`/images/${imgPath}`}
         alt="Parallax laag"
         className="image"
       />
