@@ -1,5 +1,5 @@
 import fairytales from "../data/data.json";
-import FairytaleCard from "../components/FairytaleCard";
+import FairytaleCard from "../components/FairytaleCard.jsx";
 import { Link } from "react-router-dom";
 
 function Home() {

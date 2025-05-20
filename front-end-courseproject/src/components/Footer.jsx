@@ -1,10 +1,11 @@
 import "./Footer.css";
 import { NavLink } from "react-router-dom";
+import logo from '../assets/Er_was_eens_Logo.png';
 function Footer() {
   return (
     <footer>
       <div className="footer-logo">
-        <img src="../Er_was_eens_Logo.png" alt="Er was eens logo" />
+        <img src={logo} alt="Er was eens logo" />
       </div>
       <div className="about">
         <h1>About Us</h1>

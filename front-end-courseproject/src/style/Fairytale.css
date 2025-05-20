@@ -1,0 +1,67 @@
+.fairytale {
+  background-color: #1a1a1a;
+  color: white;
+  overflow: hidden;
+}
+
+.parallax-container {
+  position: relative;
+  margin-top: 100px;
+  height: 300vh; /* Hoog genoeg om te scrollen */
+  width: 100%;
+  overflow: hidden;
+}
+.parallax-container h1 {
+    color: white;
+    font-size: 60pt;
+    text-align: center;
+}
+
+/* Basisklasse voor alle scroll-afbeeldingen */
+.scroll-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* hoogte niet fixen, zodat de afbeelding zelf bepaalt */
+  display: flex;
+  justify-content: center;
+  min-height: 100vh; /* of 80vh / 60vh etc afhankelijk van laag */
+}
+
+.layer-back {
+  margin-top: 150px;
+}
+
+.layer-forest {
+  margin-top: 100px;
+}
+
+.layer-ground {
+  margin-top: 1220px;
+}
+.layer-pigs {
+  margin-top: 1150px;
+}
+
+.layer-pigs img {
+  width: 40%;
+}
+
+.layer-front {
+  margin-top: 1200px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.end-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+}
