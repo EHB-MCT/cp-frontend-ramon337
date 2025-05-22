@@ -5,7 +5,7 @@ function Header() {
   return (
     <header>
       <div className="logo">
-        <img src="../Er_was_eens_Logo.png" alt="Er was eens logo" />
+        <img src="Er_was_eens_Logo.png" alt="Er was eens logo" />
       </div>
       <div className="header-right">
         <nav>
@@ -21,7 +21,7 @@ function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/making-of" className={({ isActive }) => (isActive ? "active" : "")}>
+              <NavLink to="/making-of/ramon-de-raes-de-wolf-en-de-3-biggetjes" className={({ isActive }) => (isActive ? "active" : "")}>
                 Making-Of
               </NavLink>
             </li>

@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer>
       <div className="footer-logo">
-        <img src="../Er_was_eens_Logo.png" alt="Er was eens logo" />
+        <img src="Er_was_eens_Logo.png" alt="Er was eens logo" />
       </div>
       <div className="about">
         <h1>About Us</h1>
@@ -20,7 +20,7 @@ function Footer() {
             <NavLink to="/projects">Projects</NavLink>
           </li>
           <li>
-            <NavLink to="/making-of">Making-Of</NavLink>
+            <NavLink to="/making-of/ramon-de-raes-de-wolf-en-de-3-biggetjes">Making-Of</NavLink>
           </li>
         </ul>
       </div>

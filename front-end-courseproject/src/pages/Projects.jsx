@@ -1,12 +1,16 @@
-import fairytales from "../data/data.json";
-import FairytaleCard from "../components/FairytaleCard";
+import useFairytales from "../hooks/useFairytales";
+import FairytaleCard from "../components/FairytaleCard.jsx";
 function Projects() {
+  const { fairytales, loading, error } = useFairytales();
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>error: {error}</p>;
   return (
     <div className="projects">
       <h1 className="title">All Projects</h1>
       <div className="fairytale-grid">
-        {fairytales.map((item, index) => (
-          <FairytaleCard key={index} image={item.image} title={item.title} student={item.student} />
+        {fairytales.map((item) => (
+          <FairytaleCard key={item.id} id={item.id} image={item.imgThumbnail} title={item.fairytale} student={item.nameStudent} />
         ))}
       </div>
     </div>

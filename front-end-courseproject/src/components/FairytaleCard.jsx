@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
 
-function FairytaleCard({ image, title, student }) {
+function FairytaleCard({ id, image, title, student}) {
+  console.log(id);
   return (
-    <NavLink className="fairytale-card" to="/fairytale">
+    <NavLink to={`/making-of/${id}`} className="fairytale-card">
       <img className="fairytale-image" src={image} alt={title} />
       <h2 className="fairytale-title">{title}</h2>
       <p className="fairytale-student">{student}</p>

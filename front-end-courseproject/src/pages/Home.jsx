@@ -1,14 +1,18 @@
-import fairytales from "../data/data.json";
+import useFairytales from "../hooks/useFairytales";
 import FairytaleCard from "../components/FairytaleCard.jsx";
 import { Link } from "react-router-dom";
 
 function Home() {
+  const { fairytales, loading, error } = useFairytales();
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>error: {error}</p>;
+  console.log(fairytales);
   return (
     <div className="home">
       <h1 className="title">In the spotlight</h1>
       <div className="fairytale-grid">
         {fairytales.slice(0, 4).map((item) => (
-          <FairytaleCard image={item.image} title={item.title} student={item.student} />
+          <FairytaleCard key={item.id} id={item.id} image={item.imgThumbnail} title={item.fairytale} student={item.nameStudent} />
         ))}
       </div>
       <div className="projects-button">

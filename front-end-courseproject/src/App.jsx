@@ -36,7 +36,7 @@ function App() {
           }
         />
         <Route
-          path="/making-of"
+          path="/making-of/:id"
           element={
             <>
               <div className="wrapper">
