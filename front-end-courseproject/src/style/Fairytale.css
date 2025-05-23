@@ -1,60 +1,76 @@
 .fairytale {
-  height: 3000px;
-}
-
-.fairytale-scene1{
-  background-color: #1a1a1a;
-  color: white;
-  overflow: hidden;
-  height: 1675px
-}
-
-.parallax-container {
-  position: relative;
-  margin-top: 100px;
-  height: 300vh; /* Hoog genoeg om te scrollen */
   width: 100%;
-  overflow: hidden;
 }
-.parallax-container h1 {
-    color: white;
-    font-size: 60pt;
-    text-align: center;
+.scene-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
-/* Basisklasse voor alle scroll-afbeeldingen */
+.scene-title {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 60pt;
+  z-index: 10;
+}
+
 .scroll-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  /* hoogte niet fixen, zodat de afbeelding zelf bepaalt */
-  display: flex;
-  justify-content: center;
-  min-height: 100vh; /* of 80vh / 60vh etc afhankelijk van laag */
+}
+
+.scroll-text-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.scroll-text {
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  z-index: 999;
+}
+
+.scroll-text p {
+  font-size: 2rem;
+    color: white;
+}
+
+.scene1 {
+  background-color: #1a1a1a;
+  height: 1600px;
+  overflow: hidden;
 }
 
 .layer-back {
-  margin-top: 150px;
+  top: 150px;
 }
 
 .layer-forest {
-  margin-top: 100px;
+  top: 100px;
 }
 
 .layer-ground {
-  margin-top: 1220px;
+  top: 1220px;
 }
 .layer-pigs {
-  margin-top: 1150px;
+  top: 1130px;
+  left: 25%;
 }
 
 .layer-pigs img {
-  width: 40%;
+  width: 50%;
 }
 
 .layer-front {
-  margin-top: 1200px;
+  top: 1200px;
 }
 
 .image {
@@ -64,9 +80,10 @@
   display: block;
 }
 
-.end-section {
+.section-2 {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #333;
+  height: 2000px;
 }

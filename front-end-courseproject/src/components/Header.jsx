@@ -1,7 +1,6 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
-function Header() {
+function Header({ searchTerm, setSearchTerm }) {
   return (
     <header>
       <div className="logo">
@@ -27,13 +26,13 @@ function Header() {
             </li>
           </ul>
         </nav>
-        <form className="search-bar">
-          <input type="text" placeholder="Search for a topic" />
+        <form className="search-bar" onSubmit={(e) => e.preventDefault()}>
+          <input type="text" placeholder="Search for topics or students" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
           <button type="submit">Search</button>
         </form>
       </div>
     </header>
   );
-};
+}
 
 export default Header;

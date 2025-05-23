@@ -5,9 +5,11 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import MakingOf from "./pages/MakingOf";
 import FairyTale from "./pages/fairytale";
+import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState("");
   return (
     <div>
       <Routes>
@@ -16,8 +18,8 @@ function App() {
           element={
             <>
               <div className="wrapper">
-                <Header />
-                <Home />
+                <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+                <Home searchTerm={searchTerm}/>
               </div>
               <Footer />
             </>
@@ -28,8 +30,8 @@ function App() {
           element={
             <>
               <div className="wrapper">
-                <Header />
-                <Projects />
+                <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+                <Projects searchTerm={searchTerm}/>
               </div>
               <Footer />
             </>
@@ -40,8 +42,8 @@ function App() {
           element={
             <>
               <div className="wrapper">
-                <Header />
-                <MakingOf />
+                <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+                <MakingOf searchTerm={searchTerm}/>
               </div>
               <Footer />
             </>

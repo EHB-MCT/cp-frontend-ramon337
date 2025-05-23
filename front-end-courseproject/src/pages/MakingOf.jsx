@@ -1,7 +1,6 @@
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import useFairytales from "../hooks/useFairytales";
 import YoutubeEmbed from "../components/YoutubeEmbed";
-import { NavLink } from "react-router-dom";
 
 function MakingOf() {
   const { id } = useParams();
@@ -19,18 +18,21 @@ function MakingOf() {
       <div className="section">
         <div className="video">
           <h2>explainer video</h2>
-        <YoutubeEmbed embedId={fairytale.videoExplainer} />
+          <YoutubeEmbed embedId={fairytale.videoExplainer} />
         </div>
         <div className="description">
           <h2>description</h2>
           <p>{fairytale.description}</p>
           <NavLink to={fairytale.fairytaleLink}>
-          <button>visit website</button>
+            <button>visit website</button>
           </NavLink>
         </div>
-        <div>
-
-        </div>
+      </div>
+      <div className="extra">
+        <h2>extra images</h2>
+        {fairytale.imgsExtra.map((imgUrl, index) => (
+          <img key={index} src={imgUrl} alt={`extra-${index}`} className="extra-image" />
+        ))}
       </div>
     </div>
   );

@@ -2,8 +2,11 @@ import useFairytales from "../hooks/useFairytales";
 import FairytaleCard from "../components/FairytaleCard.jsx";
 import { Link } from "react-router-dom";
 
-function Home() {
+function Home({ searchTerm }) {
   const { fairytales, loading, error } = useFairytales();
+
+  const filteredFairytales = fairytales.filter((f) => f.fairytale.toLowerCase().includes(searchTerm.toLowerCase()) || f.nameStudent.toLowerCase().includes(searchTerm.toLowerCase()));
+
   if (loading) return <p>Loading...</p>;
   if (error) return <p>error: {error}</p>;
   console.log(fairytales);
@@ -11,7 +14,7 @@ function Home() {
     <div className="home">
       <h1 className="title">In the spotlight</h1>
       <div className="fairytale-grid">
-        {fairytales.slice(0, 4).map((item) => (
+        {filteredFairytales.slice(0, 4).map((item) => (
           <FairytaleCard key={item.id} id={item.id} image={item.imgThumbnail} title={item.fairytale} student={item.nameStudent} />
         ))}
       </div>
