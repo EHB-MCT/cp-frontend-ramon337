@@ -1,28 +1,23 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-const ScrollText = ({ children, className = "", top = "50%", left = "50%", transform = true, transition = { duration: 0.6, ease: "easeOut" } }) => {
+const ScrollText = ({ children, className = "", transform = true, transition = { duration: 1.0, ease: "easeOut" } }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.5, once: false });
+  const isInView = useInView(ref, { margin: "-250px" });
 
   return (
-    <div className="scroll-text-wrapper">
-      <motion.div
-        ref={ref} // <-- Verplaatst hierheen!
-        className={`scroll-text ${className}`}
-        style={{
-          position: "absolute",
-          top,
-          left,
-          transform: transform ? "translate(-50%, -50%)" : "none",
-        }}
-        initial={{ opacity: 0, y: 0 }}
-        animate={isInView ? { opacity: 1, y: -100 } : { opacity: 0, y: 0 }}
-        transition={transition}
-      >
-        {children}
-      </motion.div>
-    </div>
+    <motion.div
+      ref={ref} // <-- Verplaatst hierheen!
+      className={`scroll-text ${className}`}
+      style={{
+        position: "absolute",
+      }}
+      initial={{ opacity: 0}}
+      animate={isInView ? { opacity: 1} : { opacity: 0}}
+      transition={transition}
+    >
+      {children}
+    </motion.div>
   );
 };
 
