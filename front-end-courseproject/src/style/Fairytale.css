@@ -53,10 +53,6 @@
   top: 1000px;
 }
 
-.text2 {
-  top: 1450px;
-}
-
 .scene1 {
   background-color: #1a1a1a;
   height: 1550px;
@@ -102,35 +98,41 @@
 
 .straw-house {
   width: 100%;
-  top: 50px;
+  top: 200px;
 }
 .straw-house img {
   float: right;
 }
 .wooden-house {
   width: 100%;
+  top: 100px;
 }
 .wooden-house img {
   float: left;
 }
 .stone-house {
   width: 100%;
+  top: -50px;
 }
 .stone-house img {
   float: right;
 }
+.text2 {
+  top: 20px;
+}
 .text3 {
-  top: 300px;
+  top: 450px;
   right: 400px;
 }
 .text4 {
-  top: 1000px;
+  top: 1100px;
   left: 400px;
 }
 .text5 {
-  top: 1800px;
+  top: 1700px;
   right: 400px;
 }
+.text2 p,
 .text3 p,
 .text4 p,
 .text5 p {

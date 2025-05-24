@@ -12,8 +12,8 @@ const ScrollText = ({ children, className = "", transform = true, transition = {
       style={{
         position: "absolute",
       }}
-      initial={{ opacity: 0}}
-      animate={isInView ? { opacity: 1} : { opacity: 0}}
+      initial={{ opacity: 0 }}
+      animate={isInView ? { opacity: 1 } : { opacity: 0 }}
       transition={transition}
     >
       {children}

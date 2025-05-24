@@ -6,7 +6,6 @@ function Home({ searchTerm }) {
   const { fairytales, loading, error } = useFairytales();
 
   const filteredFairytales = fairytales.filter((f) => f.fairytale.toLowerCase().includes(searchTerm.toLowerCase()) || f.nameStudent.toLowerCase().includes(searchTerm.toLowerCase()));
-
   if (loading) return <p>Loading...</p>;
   if (error) return <p>error: {error}</p>;
   console.log(fairytales);

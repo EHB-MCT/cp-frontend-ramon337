@@ -17,11 +17,11 @@ const FairyTale = () => {
         <ScrollText className="text1">
           <p>Er waren eens drie biggetjes...</p>
         </ScrollText>
+      </SceneWrapper>
+      <SceneWrapper className="scene2">
         <ScrollText className="text2">
           <p>op een dag gingen ze hun eigen huis bouwen om alleen te gaan wonen</p>
         </ScrollText>
-      </SceneWrapper>
-      <SceneWrapper className="scene2">
         <SlideInImage src="straw house.png" className="straw-house" delay={0.2} threshold={0.4} />
         <ScrollText className="text3">
           <p>het eerste biggetje bouwde een huis van stro</p>
@@ -30,7 +30,7 @@ const FairyTale = () => {
         <ScrollText className="text4">
           <p>het tweede biggetje bouwde een huis van hout</p>
         </ScrollText>
-              <SlideInImage src="stone house.png" className="stone-house" direction="right" delay={0.2} threshold={0.4} />
+        <SlideInImage src="stone house.png" className="stone-house" delay={0.2} threshold={0.4} />
         <ScrollText className="text5">
           <p>het derde biggetje bouwde een huis van steen</p>
         </ScrollText>

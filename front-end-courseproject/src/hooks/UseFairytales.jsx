@@ -12,6 +12,7 @@ export default function useFairytales() {
         return res.json();
       })
       .then((data) => {
+        data.sort(() => 0.5 - Math.random()).slice(0, 4);
         setFairytales(data);
         setLoading(false);
       })
