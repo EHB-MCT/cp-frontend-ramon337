@@ -18,8 +18,12 @@ a,
 h1 {
   font-size: 24pt;
 }
-h2, a {
+h2,
+a {
   font-size: 16pt;
+}
+footer ul li a {
+  font-family: "Roboto", sans-serif;
 }
 
 .wrapper {

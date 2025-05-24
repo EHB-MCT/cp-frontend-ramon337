@@ -35,6 +35,16 @@ const FairyTale = () => {
           <p>het derde biggetje bouwde een huis van steen</p>
         </ScrollText>
       </SceneWrapper>
+      <SceneWrapper className="scene3">
+        <img src="background-paralax-scene3.png" className="background-scene3" alt="" />
+        <ScrollImage imgPath="wolf.png" speed={-2} xSpeed={-1.5} className="layer-wolf" />
+          <ScrollText className="text6">
+          <p>Maar het gevaar loert, er sluipt een boze wolf dichterbij</p>
+        </ScrollText>
+      </SceneWrapper>
+    <SceneWrapper className="scene4">
+      
+    </SceneWrapper>
     </div>
   );
 };

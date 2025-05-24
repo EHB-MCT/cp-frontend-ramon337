@@ -2,22 +2,21 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-const ScrollImage = ({ imgPath, speed, className }) => {
+const ScrollImage = ({ imgPath, speed = 1, xSpeed = 0, className }) => {
   const targetRef = useRef(null);
 
-  // Gebruik useScroll om de scroll-voortgang te krijgen
   const { scrollYProgress } = useScroll({
     target: targetRef,
     offset: ["start end", "end start"],
   });
 
-  // Beweeg de afbeelding omhoog bij scrollen met variabele snelheid
   const y = useTransform(scrollYProgress, [0, 1], ["0%", `${-100 * speed}%`]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", `${100 * xSpeed}%`]);
 
   return (
     <motion.div
       ref={targetRef}
-      style={{ y }}
+      style={{ y, x }}
       className={`scroll-image ${className}`}
     >
       <img

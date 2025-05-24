@@ -92,8 +92,9 @@
 
 .scene2 {
   background-color: #eac799;
-  height: 2500px;
+  height: auto;
   overflow: hidden;
+  padding-bottom: 200px;
 }
 
 .straw-house {
@@ -137,4 +138,23 @@
 .text4 p,
 .text5 p {
   color: #1a1a1a;
+}
+
+.scene3 {
+  background-color: white;
+  overflow: hidden;
+}
+.background-scene3 {
+  width: 100%;
+}
+.layer-wolf {
+  width: 15%;
+  left: 65%;
+  top: 30%;
+}
+.text6 {
+  top: 600px;
+}
+.scene4 {
+  height: 2000px;
 }
