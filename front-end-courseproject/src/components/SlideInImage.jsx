@@ -1,7 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-const SlideInImage = ({ src, className = "", direction = "right", transition = { duration: 1.5, ease: "easeOut" }, delay, threshold }) => {
+const SlideInImage = ({ src, className = "", direction = "right", transition = { duration: 1.5, ease: "easeOut" }, delay, threshold, onClick }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
     amount: threshold,
@@ -23,7 +23,9 @@ const SlideInImage = ({ src, className = "", direction = "right", transition = {
           position: "relative",
           display: "block",
           margin: "0 auto",
+          cursor: onClick ? "pointer" : "default",
         }}
+        onClick={onClick}
       />
     </div>
   );

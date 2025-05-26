@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 
 const ScrollText = ({ children, className = "", transform = true, transition = { duration: 1.0, ease: "easeOut" } }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { margin: "-250px" });
+  const isInView = useInView(ref, { margin: "-150px" });
 
   return (
     <motion.div
