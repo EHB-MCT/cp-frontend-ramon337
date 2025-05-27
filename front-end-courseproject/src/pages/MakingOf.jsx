@@ -1,4 +1,4 @@
-import { NavLink, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import useFairytales from "../hooks/useFairytales";
 import YoutubeEmbed from "../components/YoutubeEmbed";
 
@@ -26,9 +26,9 @@ function MakingOf() {
             <p>{fairytale.description}</p>
           </div>
           <div>
-            <NavLink to={fairytale.fairytaleLink}>
+            <a href={fairytale.fairytaleLink}>
               <button>visit website</button>
-            </NavLink>
+            </a>
           </div>
         </div>
       </div>
