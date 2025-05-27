@@ -214,11 +214,17 @@
 }
 
 .scene5,
-.scene6 {
+.scene6,
+.scene7 {
   position: relative;
   background-color: #a39e8e;
   height: 110vh;
-
+}
+.scene6 {
+  padding-bottom: 200px;
+}
+.scene7 {
+  padding-bottom: 0;
 }
 
 .wolf3,
@@ -254,7 +260,7 @@
 .wooden-house-wrapper.destroyed img {
   width: 70%;
   margin-left: 80px;
-   margin-top: 550px;
+  margin-top: 550px;
 }
 
 .stone-house-wrapper {
@@ -268,4 +274,31 @@
 .stone-house-wrapper img {
   margin-top: 200px;
   width: 100%;
+}
+
+.text7 {
+  top: 100px;
+}
+.text8 {
+  top: 900px;
+}
+.text9 {
+  top: 200px;
+}
+.text10 {
+  top: 850px;
+}
+.text11 {
+  top: 100px;
+}
+.text12 {
+  top: 900px;
+}
+.text13 {
+  top: 0px;
+}
+.end {
+  width: 50%;
+  margin-left: 440px;
+  margin-top: 100px;
 }

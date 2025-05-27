@@ -79,14 +79,38 @@ const FairyTale = () => {
 
       <SceneWrapper className="scene4">
         <StrawScene />
+            <ScrollText className="text7">
+          <p>De wolf naderde het strooien huisje en begon te blazen</p>
+        </ScrollText>
+        <ScrollText className="text8">
+          <p>Het huisje was niet sterk genoeg, het biggetje kon nog net vluchten naar het houten huisje </p>
+        </ScrollText>
       </SceneWrapper>
 
       <SceneWrapper className="scene5">
         <WoodScene />
+           <ScrollText className="text9">
+          <p>De wolf kwam bij dit huisje en blies erop los</p>
+        </ScrollText>
+         <ScrollText className="text10">
+          <p>Ook dit huisje was nit sterk genoeg, de 2 biggetjes liepen snel naar het stenen huisje</p>
+        </ScrollText>
       </SceneWrapper>
 
       <SceneWrapper className="scene6">
         <StoneScene />
+        <ScrollText className="text11">
+          <p>De wolf probeerde ook dit huis omver te blazen</p>
+        </ScrollText>
+        <ScrollText className="text12">
+          <p>Het stenen huis was wel sterk genoeg. De 3 biggetjes waren veilig!</p>
+        </ScrollText>
+      </SceneWrapper>
+      <SceneWrapper className="scene7">
+        <img src="end.png" className="end" alt="" />
+          <ScrollText className="text13">
+          <p>En ze leefden nog lang en gelukkig...</p>
+        </ScrollText>
       </SceneWrapper>
     </div>
   );
