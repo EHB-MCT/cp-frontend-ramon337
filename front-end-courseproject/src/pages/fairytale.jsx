@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import ScrollImage from "../components/ScrollImage";
 import ScrollText from "../components/ScrollText";
@@ -8,6 +9,7 @@ import SlideInImage from "../components/slideInImage.jsx";
 import StrawScene from "../components/StrawScene";
 import WoodScene from "../components/WoodScene";
 import StoneScene from "../components/StoneScene";
+import { useLocation } from "react-router-dom";
 
 const FairyTale = () => {
   const [blowTriggered, setBlowTriggered] = useState(false);
@@ -17,6 +19,10 @@ const FairyTale = () => {
   const [woodDestroyed, setWoodDestroyed] = useState(false);
 
   const [stoneBlow, setStoneBlow] = useState(false);
+
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const id = params.get("id");
 
   const handleWolfClick = (type) => {
     if (type === "straw" && !blowTriggered) {
@@ -37,12 +43,23 @@ const FairyTale = () => {
   return (
     <div className="fairytale">
       {/* Scene 1 */}
+      <Link className="back-button" to="/making-of/ramon-de-raes-de-wolf-en-de-3-biggetjes">
+        Back
+      </Link>
       <SceneWrapper className="scene1">
         <h1 className="scene-title">De 3 Biggetjes</h1>
         <ScrollImage imgPath="layer-back.png" speed={-0.4} className="layer-back" />
         <ScrollImage imgPath="layer-forest.png" speed={0.4} className="layer-forest" />
         <ScrollImage imgPath="layer-ground.png" speed={0.6} className="layer-ground" />
-        <ScrollImage imgPath="pigs.png" speed={0.6} className="layer-pigs" />
+        <button style={{cursor: "pointer"}}
+          onClick={() => {
+            const scream = new Audio("./pig-sound.wav");
+            scream.volume = 0.9;
+            scream.play();
+          }}
+        >
+          <ScrollImage imgPath="pigs.png" speed={0.6} className="layer-pigs" />
+        </button>
         <ScrollImage imgPath="layer-front.png" speed={1} className="layer-front" />
         <ScrollText className="text1">
           <p>Er waren eens drie biggetjes...</p>
@@ -79,7 +96,7 @@ const FairyTale = () => {
 
       <SceneWrapper className="scene4">
         <StrawScene />
-            <ScrollText className="text7">
+        <ScrollText className="text7">
           <p>De wolf naderde het strooien huisje en begon te blazen</p>
         </ScrollText>
         <ScrollText className="text8">
@@ -89,10 +106,10 @@ const FairyTale = () => {
 
       <SceneWrapper className="scene5">
         <WoodScene />
-           <ScrollText className="text9">
+        <ScrollText className="text9">
           <p>De wolf kwam bij dit huisje en blies erop los</p>
         </ScrollText>
-         <ScrollText className="text10">
+        <ScrollText className="text10">
           <p>Ook dit huisje was nit sterk genoeg, de 2 biggetjes liepen snel naar het stenen huisje</p>
         </ScrollText>
       </SceneWrapper>
@@ -108,7 +125,7 @@ const FairyTale = () => {
       </SceneWrapper>
       <SceneWrapper className="scene7">
         <img src="end.png" className="end" alt="" />
-          <ScrollText className="text13">
+        <ScrollText className="text13">
           <p>En ze leefden nog lang en gelukkig...</p>
         </ScrollText>
       </SceneWrapper>

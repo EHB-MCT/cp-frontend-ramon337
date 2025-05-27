@@ -1,6 +1,23 @@
 .fairytale {
   width: 100%;
 }
+.back-button {
+  background-color: #d23b3b;
+  color: white;
+  border: none;
+  padding: 10px 60px;
+  font-family: "Bungee", cursive;
+  cursor: pointer;
+  border-radius: 15px;
+  justify-content: center;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
 .scene-wrapper {
   position: relative;
   width: 100%;

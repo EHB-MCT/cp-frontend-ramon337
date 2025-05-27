@@ -12,4 +12,5 @@ Sources:
 - https://youtu.be/PczQ0qSwe1E?si=1COcXIGeYKGWjc3_ for help with scroll effects.
 - https://www.w3schools.com/html/html_favicon.asp for making the favicon.
 - https://www.youtube.com/shorts/70zra8h-Qzs for react routes
+- https://chatgpt.com/share/68351462-7920-8007-99ec-ad40f4ec4a32 for sound on easter egg
 - canvas for general info and examples
