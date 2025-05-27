@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link , useParams } from "react-router-dom";
 import useFairytales from "../hooks/useFairytales";
 import YoutubeEmbed from "../components/YoutubeEmbed";
 
@@ -26,9 +26,9 @@ function MakingOf() {
             <p>{fairytale.description}</p>
           </div>
           <div>
-            <a href={fairytale.fairytaleLink}>
+            <Link to={fairytale.fairytaleLink}>
               <button>visit website</button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
