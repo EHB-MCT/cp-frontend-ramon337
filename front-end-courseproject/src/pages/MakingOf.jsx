@@ -26,9 +26,9 @@ function MakingOf() {
             <p>{fairytale.description}</p>
           </div>
           <div>
-            <Link to={fairytale.fairytaleLink}>
+            <a href={fairytale.fairytaleLink}>
               <button>visit website</button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
